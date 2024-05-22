@@ -143,3 +143,5 @@ elif p == 2:
         import rockpaperscissor
     else:
         print("Enter the valid number ")
+else :
+    print("Enter the valid number")
