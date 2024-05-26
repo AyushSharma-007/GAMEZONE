@@ -7,7 +7,7 @@ p = int(input("Enter the  number"))
 if p == 1:
     print("1.TIK-TAC-TOE")
     print("2.ROCK-PAPER-SCISSOR")
-    print("3.Kaun Banega CrorePati")
+    print("3.KAUN BANEGA CROREPATI")
     a = int(input("Enter the number"))
     if a == 1:
         import numpy as np
@@ -101,8 +101,7 @@ if p == 1:
                 else: 
                     print(getPlayer(h), 'wins')
                     return 1
-                    
-            l = [['1','2','3'],
+                l = [['1','2','3'],
                  ['4','5','6'],
                  ['7','8','9']]
             d = {1:(0,0), 2:(0,1), 3:(0,2), 4:(1,0), 5:(1,1), 6:(1,2), 7:(2,0), 8:(2,1), 9:(2,2)}
