@@ -176,7 +176,6 @@ def total(c,d):
       elif d>c: print("Player-2 WINS MORE MACTHES")
       else    : print("ITS A TIE")
           
-print("-------------WELCOME TO THE GAME OF ROCK PAPER SCISSOR------------")
 for i in range(0,5):  
      a,b = initials()
      c,d = win(a,b)
