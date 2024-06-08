@@ -8,6 +8,7 @@ if p == 1:
     print("1.TIK-TAC-TOE")
     print("2.ROCK-PAPER-SCISSOR")
     print("3.KAUN BANEGA CROREPATI")
+    print("4.HANGMAN GAME")
     a = int(input("Enter the number"))
     if a == 1:
         import numpy as np
@@ -129,52 +130,52 @@ if p == 1:
     elif a ==2 :
       import numpy as np
         #rockpaperscissor
-def initials():
-    print("How many players want to play :")
-    print("1. singleplayer")
-    print("2. multiplayer")
-    p = int(input("Enter the number"))
-    if p == 1:
-        l = ['R','S','P']
-        player1 =  np.random.choice(l)
-        #player1 = input("Choose you option player-1 \n 1. R for rock \n 2. S for scissor \n 3. P for paper\n").upper()
-        player2 = input("Choose you option player-2 \n 1. R for rock \n 2. S for scissor \n 3. P for paper\n").upper()
-        return player1,player2
-    elif p ==2:     
-        player1 = input("Choose you option player-1 \n 1. R for rock \n 2. S for scissor \n 3. P for paper\n").upper()
-        player2 = input("Choose you option player-2 \n 1. R for rock \n 2. S for scissor \n 3. P for paper\n").upper()
-    else:
-        print("Enter the valid number")
-def win(a,b):
-      counta = 0 
-      countb = 0
-      if a ==  b  : print('TIE')    
-      elif a =='R' and b == 'S' : 
-          print('PLAYER-1 WINS') 
-          counta += 1 
-      elif a == 'S' and b == 'P' : 
-          print('PLAYER-1 WINS') 
-          counta += 1      
-      elif a == 'P' and b == 'R' : 
-          print('PLAYER-1 WINS') 
-          counta += 1 
-      elif a == 'R' and b == 'P' : 
-          print('PLAYER-2 WINS') 
-          countb += 1       
-      elif a == 'S' and b == 'R' : 
-          print('PLAYER -2 WINS') 
-          countb += 1 
-      elif a == 'P' and b == 'S' : 
-          print('PLAYER - 2 WINS') 
-          countb += 1
-      else:
-          print("Enter the valid option")
-      return counta,countb  
-     
-def total(c,d):      
-      if c>d  : print("Player-1 WINS MORE MATCHES")
-      elif d>c: print("Player-2 WINS MORE MACTHES")
-      else    : print("ITS A TIE")
+    def initials():
+        print("How many players want to play :")
+        print("1. singleplayer")
+        print("2. multiplayer")
+        p = int(input("Enter the number"))
+        if p == 1:
+            l = ['R','S','P']
+            player1 =  np.random.choice(l)
+            #player1 = input("Choose you option player-1 \n 1. R for rock \n 2. S for scissor \n 3. P for paper\n").upper()
+            player2 = input("Choose you option player-2 \n 1. R for rock \n 2. S for scissor \n 3. P for paper\n").upper()
+            return player1,player2
+        elif p ==2:     
+            player1 = input("Choose you option player-1 \n 1. R for rock \n 2. S for scissor \n 3. P for paper\n").upper()
+            player2 = input("Choose you option player-2 \n 1. R for rock \n 2. S for scissor \n 3. P for paper\n").upper()
+        else:
+            print("Enter the valid number")
+    def win(a,b):
+          counta = 0 
+          countb = 0
+          if a ==  b  : print('TIE')    
+          elif a =='R' and b == 'S' : 
+              print('PLAYER-1 WINS') 
+              counta += 1 
+          elif a == 'S' and b == 'P' : 
+              print('PLAYER-1 WINS') 
+              counta += 1      
+          elif a == 'P' and b == 'R' : 
+              print('PLAYER-1 WINS') 
+              counta += 1 
+          elif a == 'R' and b == 'P' : 
+              print('PLAYER-2 WINS') 
+              countb += 1       
+          elif a == 'S' and b == 'R' : 
+              print('PLAYER -2 WINS') 
+              countb += 1 
+          elif a == 'P' and b == 'S' : 
+              print('PLAYER - 2 WINS') 
+              countb += 1
+          else:
+              print("Enter the valid option")
+          return counta,countb  
+             
+        def total(c,d):      
+              if c>d  : print("Player-1 WINS MORE MATCHES")
+              elif d>c: print("Player-2 WINS MORE MACTHES")
+              else    : print("ITS A TIE")
           
 for i in range(0,5):  
      a,b = initials()
