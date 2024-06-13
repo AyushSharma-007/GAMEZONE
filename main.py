@@ -227,6 +227,28 @@ config = {
 total =0
 firebase = pyrebase.initialize_app(config)
 db = firebase.database()
+import pyttsx3 
+converter = pyttsx3.init()  
+converter.setProperty('rate', 125) 
+converter.setProperty('volume', 1.0) 
+# converter.setProperty('language',hindi) 
+converter.say("WELCOME TO THE GAME !!! OF WHO WILL BECOME THE MILLIONAIRE ") 
+converter.say("I'M YOUR HOST! THE AI") 
+
+
+
+converter.runAndWait() 
+
+voices = converter.getProperty('voices') 
+  
+for voice in voices: 
+    # to get the info. about various voices in our PC  
+    print("Voice:") 
+    print("ID: %s" %voice.id) 
+    print("Name: %s" %voice.name) 
+    print("Age: %s" %voice.age) 
+    print("Gender:female %s" %voice.gender) 
+    print("Languages Known: %s" %voice.languages)
 print("-----------SWAGAT HAI AAPKA KAUN BANEGA CROREPATI ME ----------")
 flag = 1;
 variable = 0;
